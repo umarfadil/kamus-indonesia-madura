@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_green"
+    tools:context=".activitiy.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="225dp"
+            android:layout_height="125dp"
+            android:layout_margin="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_logo" />
+
+        <Button
+            android:id="@+id/btn_kamus"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_status"
+            android:text="Kamus" />
+
+        <Button
+            android:id="@+id/btn_belajar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_status"
+            android:layout_marginTop="8dp"
+            android:text="Mari Belajar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_status"
+                android:text="Tentang"
+                android:layout_marginRight="4dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/button_status"
+                android:text="Keluar" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kamus Madura</string>
+    <string name="search_by_meaning">Cari arti kata</string>
+    <string name="app_first_run">First Run!</string>
+</resources>
