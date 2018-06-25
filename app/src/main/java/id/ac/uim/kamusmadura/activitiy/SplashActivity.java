@@ -40,16 +40,22 @@ public class SplashActivity extends AppCompatActivity {
         tv_load = findViewById(R.id.tv_load);
         progressBar = findViewById(R.id.progress_bar);
 
+        //ini digunakan untuk membuat toolbar transparant
         transparentToolbar();
+
         ImageView imageViewLogo = findViewById(R.id.img_logo);
+
+        //ini untuk melakukan load data
         new LoadData().execute();
 
+        //ini untuk membuat efek/animasi pada logo
         new BounceAnimation(imageViewLogo)
                 .setBounceDistance(50)
                 .setDuration(3000)
                 .animate();
     }
 
+    //ini adalah method yang dijalankan ketika melakukan load data
     private class LoadData extends AsyncTask<Void, Integer, Void> {
         KamusHelper kamusHelper;
         AppPreference appPreference;
@@ -118,6 +124,7 @@ public class SplashActivity extends AppCompatActivity {
         }
     }
 
+    //ini untuk memecah data kosakata menjadi array yang nantiknya akan dijadikan List kosa kata
     public ArrayList<KamusModel> preLoadRaw(int data) {
         ArrayList<KamusModel> kamusModels = new ArrayList<>();
         BufferedReader reader;
@@ -141,6 +148,7 @@ public class SplashActivity extends AppCompatActivity {
         return kamusModels;
     }
 
+    //ini digunakan untuk membuat toolbar transparant seperti yang dipanggil diatas
     private void transparentToolbar() {
         if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true);
@@ -153,7 +161,6 @@ public class SplashActivity extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
     }
-
     private void setWindowFlag(Activity activity, final int bits, boolean on) {
         Window win = activity.getWindow();
         WindowManager.LayoutParams winParams = win.getAttributes();

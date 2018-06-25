@@ -46,6 +46,7 @@
             android:weightSum="2">
 
             <Button
+                android:id="@+id/btn_tentang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -54,6 +55,7 @@
                 android:layout_marginRight="4dp"/>
 
             <Button
+                android:id="@+id/btn_keluar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

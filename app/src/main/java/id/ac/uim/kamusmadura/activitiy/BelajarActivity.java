@@ -1,6 +1,7 @@
 package id.ac.uim.kamusmadura.activitiy;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +28,12 @@ public class BelajarActivity extends AppCompatActivity {
 
         btnPlay = findViewById(R.id.btnPlay);
         ivTitle = findViewById(R.id.iv_title);
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), PlayActivity.class));
+            }
+        });
 
         YoYo.with(Techniques.Bounce)
                 .duration(3000)

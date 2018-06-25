@@ -22,6 +22,7 @@ public class DetailActivity extends AppCompatActivity {
         tv_word = findViewById(R.id.tv_word);
         tv_translate = findViewById(R.id.tv_translate);
 
+        //memasukkan data yang didapat dari kamus ke detail kamus
         tv_word.setText(getIntent().getStringExtra(ITEM_WORD));
         tv_translate.setText(getIntent().getStringExtra(ITEM_TRANSLATE));
     }

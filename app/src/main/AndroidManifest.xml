@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".activitiy.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activitiy.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activitiy.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -27,8 +28,10 @@
             android:name=".activitiy.BelajarActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activitiy.KamusActivity" />
-        <activity android:name=".activitiy.DetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activitiy.DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activitiy.PlayActivity"></activity>
     </application>
 
 </manifest>

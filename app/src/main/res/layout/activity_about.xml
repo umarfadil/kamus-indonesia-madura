@@ -7,24 +7,41 @@
     android:padding="16dp"
     tools:context=".activitiy.AboutActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="Dibuat oleh \nMahasiswa Teknik Informatika UIM Pamekasan" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
         <ImageView
-            android:src="@drawable/ic_launcher_background"
-            android:layout_gravity="center_horizontal"
             android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ajher Bhesa Madhura"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal"/>
+            android:text="Ajher Bhesa Madhura"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Aplikasi android tentang kamus Banasa Indonesia - Madura versi 'Engghi-Bhuten'" />
+
 
     </LinearLayout>
 

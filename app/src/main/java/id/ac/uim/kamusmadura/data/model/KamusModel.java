@@ -3,6 +3,7 @@ package id.ac.uim.kamusmadura.data.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+//Kamus model ini digunakan sebagai object yang akan meng-handle data dari database sqlite
 public class KamusModel implements Parcelable {
 
     private int id;
