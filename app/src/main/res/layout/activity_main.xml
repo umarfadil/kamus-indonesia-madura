@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical"
         android:padding="16dp">
@@ -24,10 +24,11 @@
 
         <Button
             android:id="@+id/btn_kamus"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="48dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_status"
+            android:padding="@dimen/fab_margin"
             android:text="Kamus" />
 
         <Button
@@ -35,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_status"
-            android:layout_marginTop="8dp"
+            android:padding="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
             android:text="Mari Belajar" />
 
         <LinearLayout
@@ -50,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:padding="@dimen/fab_margin"
                 android:background="@drawable/button_status"
                 android:text="Tentang"
                 android:layout_marginRight="4dp"/>
@@ -59,6 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:padding="@dimen/fab_margin"
                 android:layout_marginLeft="4dp"
                 android:background="@drawable/button_status"
                 android:text="Keluar" />

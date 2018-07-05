@@ -35,28 +35,14 @@ public class PlayActivity extends AppCompatActivity {
 
 
     private int[] chapter1 = {
-            R.drawable.btn_play_option,
-            R.drawable.btn_play_option,
-            R.drawable.btn_play_option,
-            R.drawable.btn_play_option,
-            R.drawable.btn_play_back,
-            R.drawable.btn_play_back,
-            R.drawable.btn_play_home,
-            R.drawable.btn_play_home,
-            R.drawable.btn_play_option,
-            R.drawable.btn_play_option
-    };
-
-    private int[] suarabilal = {
-            R.raw.suarabilal01,
-            R.raw.suarabilal02,
-            R.raw.suarabilal03,
-            R.raw.suarabilal04,
-            R.raw.suarabilal05,
-            R.raw.suarabilal06,
-            R.raw.suarabilal07,
-            R.raw.suarabilal08,
-            R.raw.suarabilal09
+            R.drawable.belajar_1,
+            R.drawable.belajar_2,
+            R.drawable.belajar_3,
+            R.drawable.belajar_4,
+            R.drawable.belajar_5,
+            R.drawable.belajar_6,
+            R.drawable.belajar_7,
+            R.drawable.belajar_8
     };
 
     @Override
@@ -71,7 +57,7 @@ public class PlayActivity extends AppCompatActivity {
         int pilihan = getIntent().getIntExtra("posisi", 0);
 
         initView();
-        pageradapter = new ViewPagerAdapter(this, chapter1, suarabilal);
+        pageradapter = new ViewPagerAdapter(this, chapter1);
         viewPager.setAdapter(pageradapter);
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

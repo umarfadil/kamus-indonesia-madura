@@ -31,7 +31,9 @@
         <activity
             android:name=".activitiy.DetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activitiy.PlayActivity"></activity>
+        <activity
+            android:name=".activitiy.PlayActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

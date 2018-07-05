@@ -20,16 +20,14 @@ public class ViewPagerAdapter extends PagerAdapter {
     //generate > constructor
     Context context;
     int[] gambarbilal;
-    int[] suarabilal;
 
     private ImageView ivAdab;
     String kondisi;
     private ImageView ivText;
 
-    public ViewPagerAdapter(Context context, int[] gambarbilal, int[] suarabilal) {
+    public ViewPagerAdapter(Context context, int[] gambarbilal) {
         this.context = context;
         this.gambarbilal = gambarbilal;
-        this.suarabilal = suarabilal;
     }
 
     //jumlah gambarnya
@@ -52,23 +50,6 @@ public class ViewPagerAdapter extends PagerAdapter {
         ivAdab = rowview.findViewById(R.id.ivAdab);
 
         Glide.with(context).load(gambarbilal[position]).diskCacheStrategy(DiskCacheStrategy.RESULT).priority(Priority.NORMAL).into(ivAdab);
-
-        ivAdab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MediaPlayer player = MediaPlayer.create(context, suarabilal[position]);
-                player.start();
-
-                if(kondisi == "lanjut"){
-                    player.stop();
-                    kondisi = "berhenti";
-                } else {
-                    player.start();
-                    kondisi = "lanjut";
-                }
-
-            }
-        });
 
         //tambahkan view
         container.addView(rowview);
